@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib
+import sys
+import matplotlib.cm as cm
+import matplotlib.mlab as mlab
+import matplotlib.pyplot as plt
+import astropy.io.fits as fits
+
+# read in the input CMB spectra
+ell, DlTT = np.loadtxt("camb_31137727_scalcls.dat", usecols=(0, 1), unpack=True)
+plt.plot(ell,DlTT)
+#plt.ylabel('$D_{\ell}$ [$\mu$K$^2$]')
+#plt.xlabel('$\ell$')
+#plt.show()

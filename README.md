@@ -1,0 +1,1 @@
+These workbooks are based on a notebook for the CMB Analysis Summer School. We plot the CMB temperature spectrum from a CAMB simulation.Then we generate a simulated map of the CMB sky with the spectrum. Finally

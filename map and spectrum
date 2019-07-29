@@ -133,7 +133,7 @@ def calculate_2d_spectrum(Map1,Map2,delta_ell,ell_max,pix_size,N):
 	i=0
 	while(i<N_bins):
 		ell_array[i]=(i+0.5)*delta_ell
-		inds_in_bin=((ell2d>=(i*delta_ell))*(ell2d<(i+1)*delta_ell)).nonzero()   #ell2d在该范围的索引值
+		inds_in_bin=((ell2d>=(i*delta_ell))*(ell2d<(i+1)*delta_ell)).nonzero()   
 		CL_array[i]=np.mean(PSMap[inds_in_bin])
 		#print i, ell, ell_array[i], inds_in_bin, CL_array[i]
 		i=i+1
